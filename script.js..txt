@@ -1,0 +1,20 @@
+function goToPage(pageNumber) {
+    // Hide all pages
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
+        page.classList.remove('active');
+    });
+
+    // Show the selected page
+    document.getElementById(`page${pageNumber}`).classList.add('active');
+
+    // Add event listener to go back to page 2 when clicked
+    if (pageNumber > 2) {
+        document.getElementById(`page${pageNumber}`).onclick = function() {
+            goToPage(2);
+        };
+    }
+}
+
+// Start with the first page
+goToPage(1);

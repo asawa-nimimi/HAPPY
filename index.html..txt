@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div id="page1" class="page active">
+        <h1>Press the Number to Start</h1>
+        <button class="nav-button" onclick="goToPage(2)">1</button>
+        <button class="nav-button" onclick="goToPage(2)">2</button>
+        <button class="nav-button" onclick="goToPage(2)">3</button>
+        <button class="nav-button" onclick="goToPage(2)">4</button>
+        <button class="nav-button" onclick="goToPage(2)">5</button>
+        <button class="nav-button" onclick="goToPage(2)">6</button>
+        <button class="nav-button" onclick="goToPage(2)">7</button>
+        <button class="nav-button" onclick="goToPage(2)">8</button>
+        <button class="nav-button" onclick="goToPage(2)">9</button>
+        <button class="nav-button" onclick="goToPage(2)">0</button>
+        <button class="symbol" onclick="goToPage(3)">❤️</button>
+        <button class="symbol" onclick="goToPage(4)">♠️</button>
+        <button class="symbol" onclick="goToPage(5)">⭐</button>
+    </div>
+
+<div id="page2" class="page">
+        <h1>Welcome to Page 2</h1>
+        <p>Press anywhere to go back to Page 1.</p>
+    </div>
+    <div id="page3" class="page">
+        <h1>This is Page 3</h1>
+        <p>Press anywhere to go back to Page 2.</p>
+    </div>
+    <div id="page4" class="page">
+        <h1>This is Page 4</h1>
+        <p>Press anywhere to go back to Page 2.</p>
+    </div>
+    <div id="page5" class="page">
+        <h1>This is Page 5</h1>
+        <p>Press anywhere to go back to Page 2.</p>
+    </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
